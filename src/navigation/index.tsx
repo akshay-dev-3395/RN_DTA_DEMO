@@ -3,6 +3,7 @@ import React from 'react';
 import {RootStackType} from './navigationType.ts';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import OnboardScreen from '@app/screens/OnboardScreen/OnboardScreen.tsx';
+import HomeScreen from '@app/screens/HomeScreen/HomeScreen.tsx';
 
 type Props = {
   firstScreen?: string;
@@ -17,6 +18,7 @@ const Navigation = (props: Props) => {
       screenOptions={{headerShown: false, gestureEnabled: true}}>
       <Stack.Group>
         <Stack.Screen name={'OnboardScreen'} component={OnboardScreen} />
+        <Stack.Screen name={'HomeScreen'} component={HomeScreen} />
       </Stack.Group>
     </Stack.Navigator>
   );

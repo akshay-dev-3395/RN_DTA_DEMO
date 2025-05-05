@@ -1,4 +1,4 @@
-import {View, Text} from 'react-native';
+import {View, Text, Image} from 'react-native';
 import React from 'react';
 import {styles} from './styles.ts';
 import initialHook from './initialHook.ts';
@@ -20,9 +20,11 @@ const InitialScreen = () => {
   return (
     <ScreenWrapper>
       <View style={styles.container}>
-        <Text style={styles.textStyle} onPress={() => setOnboard(true)}>
-          Welcome
-        </Text>
+        <Image
+          source={require('@app/assets/images/general/Clip_path_group.png')}
+          style={styles.imageStyle}
+          resizeMode={'cover'}
+        />
       </View>
     </ScreenWrapper>
   );

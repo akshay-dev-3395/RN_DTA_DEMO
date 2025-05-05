@@ -10,6 +10,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import {navigate, resetNavigation} from '@app/services/navigationService';
 import {wp} from '@app/constants/responsive';
+import useAppStore from '@app/stores/appStore';
 
 const FIRST_WIDTH = wp(25);
 const SECOND_WIDTH = wp(10);
@@ -22,12 +23,15 @@ type Props = {
 
 const Pagination = (props: Props) => {
   const {currentIndex, setIsClickNext, isClickNext} = props;
+  const {isOnboard, setOnboard}: any = useAppStore(state => state);
+
   // const dispatch = useAppDispatch();
 
   const onPressButton = async (state: boolean) => {
     if (state) {
       // await dispatch(setOnboard(true));
       // resetNavigation('LoginScreen', null);
+      setOnboard(true);
     } else {
       currentIndex.value = 1;
       setIsClickNext(true);

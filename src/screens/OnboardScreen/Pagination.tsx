@@ -29,8 +29,7 @@ const Pagination = (props: Props) => {
 
   const onPressButton = async (state: boolean) => {
     if (state) {
-      // await dispatch(setOnboard(true));
-      // resetNavigation('LoginScreen', null);
+      resetNavigation('HomeScreen', null);
       setOnboard(true);
     } else {
       currentIndex.value = 1;

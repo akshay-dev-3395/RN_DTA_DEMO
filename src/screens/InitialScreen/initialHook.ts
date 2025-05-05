@@ -7,7 +7,7 @@ const initialHook = () => {
 
   const initialCheckFunction = useCallback(() => {
     setFirstRoute('OnboardScreen');
-    // setLoading(false);
+    setLoading(false);
   }, [firstRoute, isLoading]);
 
   useEffect(() => {

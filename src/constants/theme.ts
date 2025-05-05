@@ -1,12 +1,13 @@
 const COLORS = {
-  primary: '#EC008C',
-  secondary: '#00AEEF',
+  primary: '#3E55A1',
   black: '#000',
   white: '#fff',
-  gray: '#626262',
-  grayShade: '#b2b2b2',
-  borderGray: 'rgba(98, 98, 98,0.5)',
-  borderCard: 'rgba(0,0,0,0.2)',
+  gray1: '#6E727A',
+  gray2: '#8A8A8A',
+  titleBlack: '#070707',
+  subText: '#ADADAD',
+  borderShade: '#EFF3FD',
+  shadedBlue: '#EEF2FF',
 };
 
 const FONTS = {

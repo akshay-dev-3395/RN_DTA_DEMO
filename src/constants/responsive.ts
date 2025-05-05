@@ -7,12 +7,14 @@ const baseHeight = 812;
 
 const wp = (value: number | string): number => {
   const percentage = typeof value === 'number' ? value : parseFloat(value);
-  return PixelRatio.roundToNearestPixel((deviceWidth * percentage) / 100);
+  const ph = PixelRatio.roundToNearestPixel((deviceWidth * percentage) / 100);
+  return typeof value === 'number' ? ph / 4.2 : ph;
 };
 
 const hp = (value: number | string): number => {
   const percentage = typeof value === 'number' ? value : parseFloat(value);
-  return PixelRatio.roundToNearestPixel((deviceHeight * percentage) / 100);
+  const pw = PixelRatio.roundToNearestPixel((deviceHeight * percentage) / 100);
+  return typeof value === 'number' ? pw / 4.2 : pw;
 };
 
 const normalizeFontSize = (size: number): number => {

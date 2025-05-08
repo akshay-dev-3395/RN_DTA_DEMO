@@ -9,7 +9,7 @@ const initialHook = () => {
 
   const initialCheckFunction = useCallback(() => {
     if (isOnboard) {
-      setFirstRoute('HomeScreen');
+      setFirstRoute('BottomNavigation');
     } else {
       setFirstRoute('OnboardScreen');
     }

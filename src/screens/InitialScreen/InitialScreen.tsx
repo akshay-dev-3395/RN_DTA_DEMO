@@ -14,7 +14,7 @@ const InitialScreen = () => {
   console.log('InitialScreen====', isOnboard);
 
   if (!isLoading) {
-    return <Navigation firstScreen={firstRoute} />;
+    return <Navigation firstScreen={firstRoute} testID="navigation-root" />;
   }
 
   return (
@@ -24,6 +24,7 @@ const InitialScreen = () => {
           source={require('@app/assets/images/general/Clip_path_group.png')}
           style={styles.imageStyle}
           resizeMode={'cover'}
+          testID="logo-image"
         />
       </View>
     </ScreenWrapper>

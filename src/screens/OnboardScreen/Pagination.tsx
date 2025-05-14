@@ -71,7 +71,8 @@ const Pagination = (props: Props) => {
       </View>
       <TouchableOpacity
         onPress={() => onPressButton(isClickNext)}
-        style={styles.button}>
+        style={styles.button}
+        testID="next-button">
         <ArrowRight />
       </TouchableOpacity>
     </View>

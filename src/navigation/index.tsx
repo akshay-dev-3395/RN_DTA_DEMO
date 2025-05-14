@@ -7,6 +7,7 @@ import HomeScreen from '@app/screens/HomeScreen/HomeScreen.tsx';
 
 type Props = {
   firstScreen?: string;
+  testID?: string;
 };
 
 const Navigation = (props: Props) => {

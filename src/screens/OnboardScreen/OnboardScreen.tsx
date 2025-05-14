@@ -18,7 +18,7 @@ const OnboardScreen = () => {
 
   return (
     <ScreenWrapper translucent>
-      <View style={styles.container}>
+      <View style={styles.container} testID="OnboardScreen">
         <Animated.Image
           source={require('@app/assets/images/general/onboard.png')}
           style={[styles.imageStyle, animateImageStyle]}

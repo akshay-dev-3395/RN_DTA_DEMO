@@ -8,8 +8,8 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "detox-build-android": "detox build --configuration android.emu.debug",
-    "detox-test-android": "detox test --configuration android.emu.debug"
+    "detox-build-android": "npx detox build --configuration android.emu.debug",
+    "detox-test-android": "npx detox test --configuration android.emu.debug"
   },
   "dependencies": {
     "@react-navigation/native": "^7.1.8",

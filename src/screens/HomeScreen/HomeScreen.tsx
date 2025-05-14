@@ -6,7 +6,7 @@ import {styles} from './styles';
 const HomeScreen = () => {
   return (
     <ScreenWrapper>
-      <View style={styles.container}>
+      <View style={styles.container} testID="HomeScreen">
         <Text style={styles.textStyle}> Welcome to Home Screen</Text>
       </View>
     </ScreenWrapper>

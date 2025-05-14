@@ -25,7 +25,7 @@ const OnboardScreen = () => {
         />
         <View style={styles.innerContainer}>
           <Animated.View style={[styles.bottomDiv1, animateView1Style]}>
-            <Text style={styles.welcome}>
+            <Text style={styles.welcome} testID="onboard-text-1">
               Submit leave requests and get approvals on the go
             </Text>
             <Text style={styles.pText}>
@@ -34,7 +34,7 @@ const OnboardScreen = () => {
             </Text>
           </Animated.View>
           <Animated.View style={[styles.bottomDiv2, animateView2Style]}>
-            <Text style={styles.welcome}>
+            <Text style={styles.welcome} testID="onboard-text-2">
               Connect with your team instantly, anytime, anywhere
             </Text>
             <Text style={styles.pText}>

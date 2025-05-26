@@ -1,16 +1,30 @@
 import {normalizeFontSize, wp} from '@app/constants/responsive';
 import {COLORS, FONTS} from '@app/constants/theme';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   textStyle: {
-    ...FONTS.extraBold,
     color: COLORS.black,
-    fontSize: normalizeFontSize(30),
+    fontSize: normalizeFontSize(16),
+    ...FONTS.semiBold
+  },
+  headerContainer:{
+    width: '100%',
+    boxShadow: '0px 1px 0px 0px #a8a7a7',
+    justifyContent:'center',
+    alignItems: 'center',
+    zIndex: 10,
+    paddingVertical: wp(30),
+    paddingHorizontal: wp(20),
+  },
+  bodyContainer:{
+    width: '100%',
+  },
+  separator: {
+    height: wp(1),
+    backgroundColor: '#eee',
   },
 });

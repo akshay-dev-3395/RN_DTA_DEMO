@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { wp } from '@app/constants/responsive';
-import { COLORS, FONTS } from '@app/constants/theme';
+import { FONTS } from '@app/constants/theme';
 import AnnouncementCard from './AnnouncementCard';
 
 const AnnouncementData = [

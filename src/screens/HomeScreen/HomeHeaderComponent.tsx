@@ -1,4 +1,4 @@
-import { ImageBackground, StyleSheet, Text, View } from 'react-native'
+import { ImageBackground, Pressable, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { COLORS, FONTS } from '@app/constants/theme'
 import { normalizeFontSize, wp } from '@app/constants/responsive'
@@ -7,6 +7,7 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import CalendarIcon from '@app/assets/icons/calander.svg';
 import SignInTimeIcon from '@app/assets/icons/signInTime.svg';
 import SignOutTimeIcon from '@app/assets/icons/signOutTime.svg';
+import { navigate } from '@app/services/navigationService';
 
 
 const HomeHeaderComponent = () => {
@@ -31,15 +32,22 @@ const HomeHeaderComponent = () => {
     return timeString;
   }
 
+  const navigateToProfile = () => {
+    return navigate('ProfileScreen', {});
+  }
+
   return (
     <View style={styles.container}>
+      <Pressable onPress={navigateToProfile}>
         <View style={styles.profileContainer}>
           <UserProfileIcon></UserProfileIcon>
             <View style={styles.textContainer}>
             <Text style={styles.greeting}>Hello, Anjana</Text>
             <Text style={styles.subText}>DevOps Engineer</Text>
           </View>
-        </View>      
+        </View>
+      </Pressable>
+              
         <View>
           <View style={styles.attendanceContainer}>
             <View style={styles.dateContainer}>
@@ -111,6 +119,7 @@ const insets = useSafeAreaInsets();
     },
     profileContainer:{
       flexDirection: 'row',
+      marginTop: wp(5)
     },
     textContainer: {
         marginLeft: wp(12),

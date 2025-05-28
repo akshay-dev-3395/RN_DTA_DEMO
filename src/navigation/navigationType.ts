@@ -6,4 +6,6 @@ export type RootStackType = {
   AlertScreen: undefined;
   AttendanceScreen: undefined;
   NotificationScreen: undefined;
+  ProfileScreen: undefined;
+  TermsConditionScreen:undefined;
 };

@@ -8,7 +8,11 @@ const AttendanceScreen = () => {
   return (
     <ScreenWrapper>
       <View style={styles.container}>
-        <Text style={styles.textStyle}> Attendance Screen</Text>
+      <View style={styles.headerContainer}>
+        <Text style={styles.textStyle}> Attendance</Text>
+      </View>
+      <View style={styles.bodyContainer}>
+        </View>
       </View>
     </ScreenWrapper>
   )

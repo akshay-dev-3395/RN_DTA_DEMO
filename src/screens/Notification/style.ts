@@ -21,9 +21,8 @@ export const styles = StyleSheet.create({
     paddingHorizontal: wp(20),
   },
   bodyContainer:{
-    paddingBottom: wp(20),
+    paddingBottom: wp(180),
     width: '100%',
-    marginBottom: wp(20)
   },
   separator: {
     height: wp(1),

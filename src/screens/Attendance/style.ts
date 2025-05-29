@@ -22,5 +22,6 @@ export const styles = StyleSheet.create({
   },
   bodyContainer:{
     width: '100%',
+    paddingBottom: wp(180)
   },
 });

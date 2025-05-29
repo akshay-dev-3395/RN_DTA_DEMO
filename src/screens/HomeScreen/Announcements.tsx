@@ -32,10 +32,9 @@ const styles = StyleSheet.create({
   container: {
     marginTop: wp(20),
     paddingHorizontal: wp(20),
-    marginBottom: wp(30),
+    marginBottom: wp(60),
   },
   headerText: {
-    // marginTop: wp(10),
     marginBottom: wp(10),
     ...FONTS.semiBold,
     fontSize: wp(17),

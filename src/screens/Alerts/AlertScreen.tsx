@@ -91,6 +91,7 @@ const AlertScreen = () => {
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => <AlertsItemCard {...item} />}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
+        showsVerticalScrollIndicator={false}
       />
       </View>
       </View>
